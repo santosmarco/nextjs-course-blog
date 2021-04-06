@@ -7,7 +7,7 @@ import {
   NextScript,
 } from "next/document";
 import React from "react";
-import { theme } from "../themes";
+import { themes } from "../themes";
 
 export default class Document extends NextDocument {
   render() {
@@ -15,7 +15,10 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           {/* PWA primary color */}
-          <meta name="theme-color" content={theme.palette.primary.main} />
+          <meta
+            name="theme-color"
+            content={themes["light"].palette.primary.main}
+          />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
