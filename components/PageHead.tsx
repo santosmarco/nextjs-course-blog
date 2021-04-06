@@ -17,7 +17,7 @@ export const PageHead: React.FC<PageHeadProps> = ({
   return (
     <Head>
       <title>
-        {replaceTitle ? title : `${appInfo.name}${title && ` • ${title}`}`}
+        {replaceTitle ? title : `${appInfo.name}${title ? ` • ${title}` : ""}`}
       </title>
       {children}
     </Head>
