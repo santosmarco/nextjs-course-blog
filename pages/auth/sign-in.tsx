@@ -7,7 +7,7 @@ import {
   Link,
   PageHead,
 } from "../../components";
-import { validateEmail, validateRequired } from "../../utils";
+import { validateEmail, validateRequired } from "../../utils/auth";
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -6,3 +6,5 @@ export * from "./page-components/auth/AuthFormField";
 export * from "./page-components/auth/AuthSubmitBtn";
 export * from "./page-components/PageContainer";
 export * from "./PageHead";
+export * from "./posts/PostCard";
+export * from "./posts/PostsGrid";

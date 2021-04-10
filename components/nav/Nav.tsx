@@ -111,7 +111,11 @@ export const Nav: React.FC<NavProps> = ({ items: navItems }) => {
                   );
 
                 return (
-                  <Link href={item.href || ""} onClick={item.onClick}>
+                  <Link
+                    href={item.href || ""}
+                    onClick={item.onClick}
+                    key={item.href}
+                  >
                     {btn}
                   </Link>
                 );
@@ -134,7 +138,7 @@ export const Nav: React.FC<NavProps> = ({ items: navItems }) => {
               };
 
               return (
-                <Link href={item.href || ""} color="inherit">
+                <Link href={item.href || ""} color="inherit" key={item.href}>
                   <ListItem button onClick={handleClick}>
                     {item.icon && !item.hideIconOnDrawer && (
                       <ListItemIcon className={styles.drawerItemIcon}>

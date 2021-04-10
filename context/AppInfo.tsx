@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const APP_INFO = {
-  name: "Next Auth",
+  name: "NextBlog",
 };
 
 export const AppInfoCtx = createContext(APP_INFO);

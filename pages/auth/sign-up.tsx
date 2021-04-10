@@ -7,7 +7,11 @@ import {
   Link,
   PageHead,
 } from "../../components";
-import { validateEmail, validateName, validatePassword } from "../../utils";
+import {
+  validateEmail,
+  validateName,
+  validatePassword,
+} from "../../utils/auth";
 
 const useStyles = makeStyles((theme) => ({
   form: {

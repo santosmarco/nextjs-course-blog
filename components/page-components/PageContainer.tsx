@@ -21,9 +21,11 @@ export const PageContainer: React.FC<PageContainerProps> = ({
 
   return (
     <Container className={styles.container}>
-      <Typography variant="h3">{title}</Typography>
+      <header>
+        <Typography variant="h3">{title}</Typography>
+      </header>
       <Divider className={styles.divider} />
-      {children}
+      <main>{children}</main>
     </Container>
   );
 };
